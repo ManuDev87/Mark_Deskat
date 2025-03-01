@@ -28,7 +28,7 @@ export default function Home() {
       <section className="relative max-w-[800px] mx-auto px-4 -mt-12">
         <div className="bg-white p-8 rounded-lg shadow-md">
           <h2 className="text-center text-[#1e5631] text-2xl font-bold mb-6">Encuentra Repuestos Para Tu Vehículo</h2>
-          <div className="flex flex-col md:flex-row gap-4">
+          <div className="flex flex-col md:flex-row flex-wrap gap-4">
             <div className="flex-1 min-w-[150px]">
               <select className="w-full p-3 border border-[#ddd] rounded-md bg-white">
                 <option>Seleccionar Año</option>
@@ -61,9 +61,11 @@ export default function Home() {
                 <option>5.0L V8</option>
               </select>
             </div>
-            <Button className="min-w-[120px] bg-[#1e5631] hover:bg-[#164023] text-white font-bold py-3">
-              Buscar Repuestos
-            </Button>
+            <div className="w-full md:w-auto mt-2 md:mt-0">
+              <Button className="w-full bg-[#1e5631] hover:bg-[#164023] text-white font-bold py-3">
+                Buscar Repuestos
+              </Button>
+            </div>
           </div>
         </div>
       </section>
